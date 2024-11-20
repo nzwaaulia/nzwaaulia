@@ -1,0 +1,240 @@
+/* Reset and Layout Styles */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: aqua;
+}
+
+li {
+  float: left;
+  border-right: 1px solid skyblue;
+}
+ul img{
+  float: left;
+  padding-top: 10px;
+  padding-left: 25px;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: purple;
+  text-align: center;
+  padding: 20px 9px;
+  text-decoration: none;
+  margin-right: 140px;
+}
+
+/* Hover effect fix */
+li a:hover:not(.active) {
+  background-color: rgb(240, 227, 227); /* Corrected spelling */
+}
+
+/* Active link style */
+.active {
+  background-color: aqua;
+}
+
+/* Main Content Section */
+.main-content {
+  width: 100%;
+  height: 250px;
+  background-color: rgb(253, 249, 250);
+  display: flex;
+  padding-top: 70px;
+}
+
+.history {
+  background-color: aqua;
+  width: 50%;
+}
+
+.vision {
+  width: 50%;
+  background-color: aqua;
+}
+
+/* Info Section */
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.kurikulum {
+  background-color: aqua;
+}
+
+.teachers {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.teachers h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.teachers-gird {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.teachers-card {
+  width: 100%;
+  height: 150px;
+  background-color: aqua;
+  color: black; /* Corrected spelling */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.teachers-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* Fixed image roundness */
+  object-fit: cover;
+}
+
+/* Navigation Styling */
+nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  position: fixed;
+  
+}
+
+nav li {
+  float: left;
+  border-right: 1px white;
+}
+
+nav li a {
+  display: block;
+  color: black;
+  text-align: center; /* Corrected spelling */
+  padding: 20px 10px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: purple; /* You might want to adjust this color */
+}
+
+/* Additional Sections Styling */
+.sejarah {
+  background-color: purple;
+}
+
+.visi {
+  height: 310px;
+  font-weight: 100;
+  background-color: purple;
+  margin-top: 30px;
+}
+
+.kurikulum {
+  background-color: aqua;
+  margin-top: 100px;
+}
+
+.inf0 {
+  flex: 50%;
+  justify-content: space-between;
+}
+
+.teachers {
+  padding: 50px 20px;
+  text-align: center; /* Corrected spelling */
+}
+
+/* Flexbox and Grid Layout */
+.pengajar {
+  display: flex;
+  flex-wrap: nowrap; /* Corrected spelling */
+  background-color: #BFECFF;
+}
+
+.bloka {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.komputer{
+  display: block;
+  margin-bottom: 50px ;
+  margin-left: 50px;
+  padding-left: 150px;
+}
+.guru{
+  background-color:aqua;
+}
+.nazwa{
+  padding-left: 600px;
+}
+.contactfollow{
+  background-color: aqua;
+}
+input[type=text], input[type=email], select, textarea {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
